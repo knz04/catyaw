@@ -17,6 +17,7 @@ function Products() {
   const [hasMoreCats, setHasMoreCats] = useState<boolean>(true);
 
   const fetchCats = async () => {
+    setError(null);
     try {
       const skip = (currentPage - 1) * limit;
       const response = await fetch(
@@ -49,7 +50,16 @@ function Products() {
 
   return (
     <div className="flex flex-col items-center my-8">
-      <p className="my-8 text-4xl font-semibold">Cat Catalogue</p>
+      <p className="my-8 text-4xl ">
+        <span className="font-bold">Cat</span>alogue
+      </p>
+
+      {error && (
+        <div className="alert alert-error text-center my-8 max-w-md">
+          <span>{error}</span>
+        </div>
+      )}
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
         {cats.map((cat) => (
           <CatCard key={cat.id} cat={cat} />

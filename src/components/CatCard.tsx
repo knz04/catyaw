@@ -10,7 +10,6 @@ interface CatCardProps {
 }
 
 export function CatCard({ cat }: CatCardProps) {
-  // Construct the image URL from the cat's ID
   const imageUrl = `https://cataas.com/cat/${cat.id}`;
 
   return (
@@ -24,7 +23,7 @@ export function CatCard({ cat }: CatCardProps) {
       </figure>
       <div className="card-body">
         <div className="card-actions justify-center mb-2">
-          <button className="btn btn-primary">View Cat</button>
+          <button className="btn btn-primary">Save Cat</button>
         </div>
         <div className="card-actions justify-center flex-wrap gap-2">
           {cat.tags && cat.tags.length > 0 ? (

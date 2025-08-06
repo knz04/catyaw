@@ -32,7 +32,7 @@ function Navbar() {
             </li>
 
             <li>
-              <NavLink to="/products">Products</NavLink>
+              <NavLink to="/catalogue">Catalogue</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>
@@ -51,7 +51,7 @@ function Navbar() {
           </li>
 
           <li>
-            <NavLink to="/products">Products</NavLink>
+            <NavLink to="/catalogue">Catalogue</NavLink>
           </li>
           <li>
             <NavLink to="/about">About</NavLink>
