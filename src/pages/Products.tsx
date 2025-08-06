@@ -1,4 +1,4 @@
-import CatCard from "../components/CatCard";
+import { CatCard } from "../components/CatCard";
 import { useState, useEffect } from "react";
 
 interface Cat {
@@ -33,11 +33,14 @@ function Products() {
   }, []);
 
   return (
-    <>
-      {cats.map((cat) => (
-        <CatCard key={cat.id} cat={cat} />
-      ))}
-    </>
+    <div className="flex flex-col items-center my-8">
+      <p className="my-8 text-4xl font-semibold">Cat Catalogue</p>
+      <div className="grid grid-cols-3 gap-x-4 gap-y-8">
+        {cats.map((cat) => (
+          <CatCard key={cat.id} cat={cat} />
+        ))}
+      </div>
+    </div>
   );
 }
 

@@ -1,29 +1,43 @@
-function CatCard({ cat }: CatCardProps) {
+interface Cat {
+  id: string;
+  tags: string[];
+  mimetype: string;
+  createdAt: string;
+}
+
+interface CatCardProps {
+  cat: Cat;
+}
+
+export function CatCard({ cat }: CatCardProps) {
+  // Construct the image URL from the cat's ID
+  const imageUrl = `https://cataas.com/cat/${cat.id}`;
+
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
       <figure>
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+          src={imageUrl}
+          alt={`Cat with ID: ${cat.id}`}
+          className="w-full h-60 object-cover"
         />
       </figure>
       <div className="card-body">
-        <div className="card-actions justify-center">
-          <button className="btn btn-primary">Buy Now</button>
+        <div className="card-actions justify-center mb-2">
+          <button className="btn btn-primary">View Cat</button>
         </div>
-        <div className="card-actions justify-center">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
-          <div className="badge badge-outline">Products</div>
-          <div className="badge badge-outline">Products</div>
-          <div className="badge badge-outline">Products</div>
-          <div className="badge badge-outline">Products</div>
-          <div className="badge badge-outline">Products</div>
-          // map the tags above as needed
+        <div className="card-actions justify-center flex-wrap gap-2">
+          {cat.tags && cat.tags.length > 0 ? (
+            cat.tags.map((tag) => (
+              <div key={tag} className="badge badge-outline">
+                {tag}
+              </div>
+            ))
+          ) : (
+            <div className="badge badge-outline">No Tags</div>
+          )}
         </div>
       </div>
     </div>
   );
 }
-
-export default CatCard;
