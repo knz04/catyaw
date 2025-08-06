@@ -50,7 +50,7 @@ function Products() {
   return (
     <div className="flex flex-col items-center my-8">
       <p className="my-8 text-4xl font-semibold">Cat Catalogue</p>
-      <div className="grid grid-cols-3 gap-x-4 gap-y-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
         {cats.map((cat) => (
           <CatCard key={cat.id} cat={cat} />
         ))}
