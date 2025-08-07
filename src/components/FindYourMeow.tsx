@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import image from "../assets/findyourmeow.jpeg";
 
 function FindYourMeow() {
@@ -12,7 +13,9 @@ function FindYourMeow() {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Find Cats</button>
+          <Link to="/saves" className="btn btn-primary">
+            View Saved Cats
+          </Link>
         </div>
       </div>
     </div>

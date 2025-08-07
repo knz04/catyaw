@@ -1,69 +1,90 @@
-# React + TypeScript + Vite
+# Catyaw: Find Your Meow\! 🐾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Catyaw (pronounced like "Kwetiaw") is a React TypeScript web application built with Vite, Tailwind CSS, and DaisyUI. It allows users to browse a catalogue of adorable cat pictures and save their favorites.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+- **Home Page**: A welcoming landing page featuring a random cat image and an introduction to Catyaw.
+- **Cat Catalogue**: Browse through a paginated list of cat pictures fetched from the Cataas API.
+- **About Page**: Learn more about Catyaw and contact us through a simple form.
+- **Save Functionality**: The "Save Cat" button is present on each `CatCard`, indicating future functionality for users to save their favorite cats.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## How to Run the Application 🚀
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+To get Catyaw up and running on your local machine, follow these steps:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js**: Version 14 or higher. You can download it from [nodejs.org](https://nodejs.org/).
+- **npm** (Node Package Manager) or **Yarn**: npm comes with Node.js, or you can install Yarn separately.
+
+### Installation
+
+1.  **Clone the repository** (if applicable, otherwise, ensure you have all project files):
+
+    ```bash
+    git clone <your-repository-url>
+    cd catyaw
+    ```
+
+2.  **Install dependencies**:
+
+    Using npm:
+
+    ```bash
+    npm install
+    ```
+
+    Or using Yarn:
+
+    ```bash
+    yarn install
+    ```
+
+### Running the Development Server
+
+Once the dependencies are installed, you can start the development server:
+
+Using npm:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Or using Yarn:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+yarn dev
 ```
+
+This will typically start the application on `http://localhost:5173` (or another available port). The console will provide the exact URL.
+
+### Building for Production
+
+To create a production-ready build of the application:
+
+Using npm:
+
+```bash
+npm run build
+```
+
+Or using Yarn:
+
+```bash
+yarn build
+```
+
+This command will compile and optimize your application, placing the output in the `dist/` directory. You can then deploy these static files to any web server.
+
+---
+
+## Deployment 🌐
+
+The Catyaw web application is deployed and accessible at: [https://catyaw.vercel.app](https://www.google.com/search?q=https://catyaw.vercel.app)

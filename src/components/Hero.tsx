@@ -36,7 +36,7 @@ function Hero() {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <Link to="/products" className="btn btn-primary">
+          <Link to="/catalogue" className="btn btn-primary">
             Get Cats
           </Link>
         </div>
