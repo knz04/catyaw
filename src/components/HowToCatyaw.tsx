@@ -3,16 +3,18 @@ import howtouse from "../assets/howtouse.png";
 function HowToCatyaw() {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-x-12 py-20">
-      <div className="flex flex-col justify-center items-center h-[50vh]">
-        <h3 className="text-5xl font-bold mb-10">How to Use Catyaw!</h3>
-        <ul className="timeline timeline-vertical max-w-lg mx-auto">
+      <div className="flex flex-col justify-center items-center h-[80vh] md:h-[40vh]">
+        <h3 className="text-5xl text-center font-bold mb-10">
+          How to Use Catyaw!
+        </h3>
+        <ul className="timeline timeline-vertical max-w-lg mx-auto mb-20 md:mb-0">
           <li>
             <div className="timeline-start">
               <div
                 className="tooltip tooltip-top"
                 data-tip="Navigate to the 'Catalogue' page."
               >
-                <div className="timeline-box text-2xl">Go to Catalogue</div>
+                <div className="timeline-box text-xl">Go to Catalogue</div>
               </div>
             </div>
             <div className="timeline-middle">
@@ -52,7 +54,7 @@ function HowToCatyaw() {
                 className="tooltip tooltip-top"
                 data-tip="Scroll through the cat pictures."
               >
-                <div className="timeline-box text-2xl">
+                <div className="timeline-box text-xl">
                   Find Your Purr-fect Match
                 </div>
               </div>
@@ -66,7 +68,7 @@ function HowToCatyaw() {
                 className="tooltip tooltip-top"
                 data-tip="Add to your collection."
               >
-                <div className="timeline-box text-2xl">Tap "Save Cat"</div>
+                <div className="timeline-box text-xl">Tap "Save Cat"</div>
               </div>
             </div>
             <div className="timeline-middle">
@@ -106,7 +108,7 @@ function HowToCatyaw() {
                 className="tooltip tooltip-top"
                 data-tip="Navigate to the 'Saves' page."
               >
-                <div className="timeline-box text-2xl">
+                <div className="timeline-box text-xl">
                   View Your Saved Treasures
                 </div>
               </div>

@@ -3,7 +3,7 @@ import image from "../assets/findyourmeow.jpeg";
 
 function FindYourMeow() {
   return (
-    <div className="hero bg-base-200 h-[80vh]">
+    <div className="hero bg-base-200 h-screen md:h-[50vh]">
       <div className="hero-content flex-col lg:flex-row">
         <img src={image} className="w-100 md:max-w-sm rounded-lg shadow-2xl" />
         <div>
