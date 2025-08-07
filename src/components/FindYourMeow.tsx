@@ -9,9 +9,8 @@ function FindYourMeow() {
         <div>
           <h1 className="text-5xl font-bold">Find Your Meow!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Ready to build your purr-sonal collection? Browse our cat-alogue of
+            charming felines and easily save the ones that make you feline good!
           </p>
           <Link to="/saves" className="btn btn-primary">
             View Saved Cats

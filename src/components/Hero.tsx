@@ -32,9 +32,7 @@ function Hero() {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Welcome to Catyaw</h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            We got cats. Many cats. Much wow. Scroll and save your faves!
           </p>
           <Link to="/catalogue" className="btn btn-primary">
             Get Cats
