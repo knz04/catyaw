@@ -12,7 +12,7 @@ function HowToCatyaw() {
             <div className="timeline-start">
               <div
                 className="tooltip tooltip-top"
-                data-tip="Navigate to the 'Catalogue' page."
+                data-tip="Go to the 'Catalogue' page."
               >
                 <div className="timeline-box text-xl">Go to Catalogue</div>
               </div>
@@ -106,7 +106,7 @@ function HowToCatyaw() {
             <div className="timeline-end">
               <div
                 className="tooltip tooltip-top"
-                data-tip="Navigate to the 'Saves' page."
+                data-tip="Go to the 'Saves' page."
               >
                 <div className="timeline-box text-xl">
                   View Your Saved Treasures
