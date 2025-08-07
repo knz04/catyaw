@@ -1,6 +1,8 @@
+import about from "../assets/about.jpeg";
+
 function About() {
   return (
-    <div className="flex flex-col items-center my-8">
+    <div className="flex flex-col items-center my-8 mx-4 md:mx-0">
       <p className="my-8 text-4xl font-semibold">About</p>
       <div>
         <p>
@@ -28,6 +30,15 @@ function About() {
 
           <button className="btn btn-neutral mt-4">Submit</button>
         </fieldset>
+
+        <div className="flex flex-col my-8">
+          <figure>
+            <img
+              src={about}
+              className="w-full h-120 object-cover rounded-2xl"
+            />
+          </figure>
+        </div>
       </div>
     </div>
   );
