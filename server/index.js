@@ -6,6 +6,7 @@ const pool = require("./db");
 const catRoutes = require("./routes/catRoutes");
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -25,4 +26,6 @@ app.get("/", (req, res) => {
 
 app.use("/api", catRoutes);
 
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Catyaw backend server running on port ${PORT}`);
+});
