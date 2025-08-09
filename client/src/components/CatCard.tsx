@@ -15,20 +15,23 @@ export function CatCard({ cat }: CatCardProps) {
   const handleSaveCat = async () => {
     try {
       console.log(cat);
-      const backendApiUrl = "http://localhost:5000/api/";
+      const backendApiUrl =
+        process.env.NODE_ENV === "production"
+          ? "https://catyaw.vercel.app/api/"
+          : "http://localhost:5000/api/";
 
       const response = await fetch(backendApiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        // Send the entire cat object. Your addCat function expects these fields.
+
         body: JSON.stringify({
           id: cat.id,
           tags: cat.tags,
           mimetype: cat.mimetype,
-          createdAt: cat.createdAt, // Pass the original createdAt from Cataas
-          notes: "", // Initialize notes as an empty string when saving
+          createdAt: cat.createdAt,
+          notes: "",
         }),
       });
 

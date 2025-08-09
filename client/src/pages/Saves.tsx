@@ -16,7 +16,10 @@ function Saves() {
   const limit = 18;
   const [hasMoreCats, setHasMoreCats] = useState<boolean>(true);
 
-  const backendApiUrl = "http://localhost:5000/api";
+  const backendApiUrl =
+    process.env.NODE_ENV === "production"
+      ? "https://catyaw.vercel.app/api"
+      : "http://localhost:5000/api";
 
   const fetchSavedCats = async () => {
     try {
