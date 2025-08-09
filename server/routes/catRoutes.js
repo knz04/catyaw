@@ -11,6 +11,7 @@ const {
 router.post("/", addCat);
 router.get("/", getAllCats);
 router.get("/:id", getCatById);
+
 router.put("/:id", updateCatNotes);
 router.delete("/:id", deleteCatById);
 

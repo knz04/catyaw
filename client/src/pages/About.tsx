@@ -13,8 +13,8 @@ function About() {
         <p>Contact us below if you have any questions regarding Catyaw.</p>
 
         {/* Contact form */}
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
-          <legend className="fieldset-legend">Contact Us</legend>
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4 my-6">
+          <legend className="fieldset-legend text-xl">Contact Us</legend>
 
           <label className="label">Name</label>
           <input type="text" className="input w-full" placeholder="Name" />
