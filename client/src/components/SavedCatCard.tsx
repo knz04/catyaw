@@ -150,9 +150,7 @@ export function SavedCatCard({
           className="modal modal-bottom sm:modal-middle"
         >
           <div className="modal-box">
-            <h3 className="font-bold text-lg">
-              Edit Notes for {cat.id.substring(0, 8)}...
-            </h3>
+            <h3 className="font-bold text-lg">Edit Notes for this cat.</h3>
             <div className="py-4">
               <fieldset className="fieldset">
                 <legend className="fieldset-legend sr-only">
