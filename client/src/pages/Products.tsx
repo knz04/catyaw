@@ -67,7 +67,7 @@ function Products() {
         <span className="font-bold">Cat</span>alogue
       </p>
 
-      <div className="flex justify-center w-100 lg:w-200 my-6 mb-10">
+      <div className="flex justify-center w-80 lg:w-200 my-6 mb-10">
         <label className="input input-bordered flex items-center gap-2 w-full">
           <svg
             className="h-[1em] opacity-50"
