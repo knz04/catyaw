@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "source": "./",
+    "runtime": "nodejs22"
+  },
+  "apphosting": {
+    "backendId": "catyaw",
+    "rootDir": "",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
+  }
+}
