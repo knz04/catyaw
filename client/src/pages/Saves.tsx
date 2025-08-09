@@ -18,7 +18,7 @@ function Saves() {
 
   const backendApiUrl =
     process.env.NODE_ENV === "production"
-      ? "https://catyaw.vercel.app/api"
+      ? "https://catyaw--catyaw-eccb8.asia-east1.hosted.app/api"
       : "http://localhost:5000/api";
 
   const fetchSavedCats = async () => {
